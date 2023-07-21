@@ -10,6 +10,7 @@ const port =process.env.PORT|| 5000
 
 require('dotenv').config();
 
+const BASE_URL=process.envnv.BASE_URL
 
 const cors = require('cors');
 
@@ -42,7 +43,7 @@ const start = async () => {
             , {
                 pingTimeout: 60000,
                 cors: {
-                    origin: "http://localhost:3000"
+                    origin: BASE_URL
                 }
             }
         )
