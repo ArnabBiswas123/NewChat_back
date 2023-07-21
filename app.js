@@ -10,7 +10,7 @@ const port =process.env.PORT|| 5000
 
 require('dotenv').config();
 
-const BASE_URL=process.envnv.BASE_URL
+const BASE_URL=process.env.BASE_URL
 
 const cors = require('cors');
 
